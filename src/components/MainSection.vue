@@ -19,6 +19,25 @@
       </div>
     </div>
   </section>
+  <section class="contact bg-yellow-50 py-16" id="contact">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-3xl font-bold text-center mb-8 text-gray-800">Контакты</h2>
+      <div class="flex flex-col items-center space-y-4 text-lg text-gray-700">
+        <div>
+          <i class="fas fa-phone-alt mr-2 text-yellow-600"></i>
+          <a href="tel:+48503680490" class="hover:underline">+48 503 680 490</a>
+        </div>
+        <div>
+          <i class="fab fa-facebook-square mr-2 text-blue-600"></i>
+          <a href="https://facebook.com/yourpage" target="_blank" class="hover:underline">Facebook</a>
+        </div>
+        <div>
+          <i class="fab fa-instagram mr-2 text-pink-500"></i>
+          <a href="https://instagram.com/yourpage" target="_blank" class="hover:underline">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>

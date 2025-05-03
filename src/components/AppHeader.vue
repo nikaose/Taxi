@@ -2,7 +2,7 @@
     <header class="header bg-yellow-500 text-white shadow">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="logo flex items-center gap-2 text-xl font-bold">
-                <i class="fas fa-taxi"></i> Taksi Kępno
+                <i class="fas fa-taxi"></i> Такси Кемпно
             </div>
             <button class="mobile-menu-btn md:hidden" @click="$emit('toggle-menu')">
                 <i class="fas" :class="isMenuOpen ? 'fa-times' : 'fa-bars'"></i>
