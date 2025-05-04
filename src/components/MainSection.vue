@@ -20,7 +20,7 @@
       <div class="hero-content flex flex-col items-center text-center">
         <!-- Логотип -->
         <div class="mb-8 transform hover:scale-105 transition-transform duration-300">
-          <img src="/img/logo.webp" alt="Logo" class="w-32 h-32 object-contain filter drop-shadow-lg">
+          <img src="/img/logo.webp" alt="Logo" class="w-32 h-32 object-cover filter drop-shadow-lg rounded-full">
         </div>
 
         <!-- Title -->
@@ -37,7 +37,8 @@
         <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md justify-center">
           <a :href="'tel:' + phoneNumber"
             class="cta-button bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-4 px-8 rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl group">
-            <font-awesome-icon :icon="['fas', 'phone']" class="text-lg transform group-hover:rotate-12 transition-transform" />
+            <font-awesome-icon :icon="['fas', 'phone']"
+              class="text-lg transform group-hover:rotate-12 transition-transform" />
             <span>{{ ctaText }}</span>
           </a>
         </div>
@@ -177,4 +178,5 @@ const title = 'Taxi Gow';
 const description = 'Надежное и комфортное такси в Кемпно и окрестностях. Быстрая подача автомобиля, опытные водители и конкурентные цены.';
 const phoneNumber = '+48794531342';
 const ctaText = 'Вызвать такси';
+
 </script>
