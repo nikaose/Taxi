@@ -36,6 +36,7 @@
 </template>
 
 <script setup>
+const phoneNumber = '+48794531342';
 // Данные для галереи такси
 const galleryImages = [
     {
