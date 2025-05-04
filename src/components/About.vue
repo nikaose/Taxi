@@ -13,8 +13,8 @@
                 </p>
             </div>
             <div class="features grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-                <FeatureCard v-for="feature in features" :key="feature.id" :icon="feature.icon" :title="feature.title"
-                    :description="feature.description" :color="feature.color" />
+                <FeatureCard v-for="feature in features" :key="feature.id" :icon="feature.iconArray"
+                    :title="feature.title" :description="feature.description" :color="feature.color" />
             </div>
         </div>
     </section>
@@ -27,21 +27,24 @@ const aboutTitle = 'Почему выбирают нас';
 const features = [
     {
         id: 1,
-        icon: 'fas fa-clock',
+        icon: 'clock',
+        iconArray: ['fas', 'clock'],
         title: '24/7 Доступность',
         description: 'Мы доступны для вас в любое время дня и ночи. Наши такси всегда готовы, когда вам это нужно, даже в праздничные дни.',
         color: 'blue'
     },
     {
         id: 2,
-        icon: 'fas fa-money-bill-wave',
+        icon: 'money-bill-wave',
+        iconArray: ['fas', 'money-bill-wave'],
         title: 'Прозрачные цены',
         description: 'Мы предлагаем перевозки по самым низким ценам в Кемпно. Никаких скрытых платежей и неприятных сюрпризов.',
         color: 'green'
     },
     {
         id: 3,
-        icon: 'fas fa-car',
+        icon: 'car',
+        iconArray: ['fas', 'car'],
         title: 'Комфорт и безопасность',
         description: 'Наш автопарк состоит из современных, регулярно обслуживаемых автомобилей для вашего максимального комфорта и безопасности.',
         color: 'yellow'

@@ -1,6 +1,5 @@
 <template>
-  <section class="hero bg-[url('/img/background.webp')] bg-cover bg-center bg-fixed py-20 relative"
-    id="hero">
+  <section class="hero bg-[url('/img/background.webp')] bg-cover bg-center bg-fixed py-20 relative" id="hero">
     <!-- Оверлей с градиентом -->
     <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50 z-0"></div>
 
@@ -38,7 +37,7 @@
         <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md justify-center">
           <a :href="'tel:' + phoneNumber"
             class="cta-button bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-4 px-8 rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl group">
-            <i class="fas fa-phone-alt text-lg transform group-hover:rotate-12 transition-transform"></i>
+            <font-awesome-icon :icon="['fas', 'phone']" class="text-lg transform group-hover:rotate-12 transition-transform" />
             <span>{{ ctaText }}</span>
           </a>
         </div>
@@ -62,7 +61,7 @@
             class="bg-white p-4 sm:p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300">
             <div class="flex flex-col items-center">
               <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4">
-                <i class="fas fa-phone-alt text-2xl text-white"></i>
+                <font-awesome-icon :icon="['fas', 'phone']" class="text-2xl text-white" />
               </div>
               <h3 class="text-xl font-semibold mb-2 hover:text-green-500 transition-colors">+48 794 531 342</h3>
             </div>
@@ -76,7 +75,7 @@
             class="bg-white p-4 sm:p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300">
             <div class="flex flex-col items-center">
               <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4">
-                <i class="fab fa-facebook-f text-2xl text-white"></i>
+                <font-awesome-icon :icon="['fab', 'facebook-f']" class="text-2xl text-white" />
               </div>
               <h3 class="text-xl font-semibold mb-2">Facebook</h3>
             </div>
@@ -91,7 +90,7 @@
             <div class="flex flex-col items-center">
               <div
                 class="w-16 h-16 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 rounded-full flex items-center justify-center mb-4">
-                <i class="fab fa-instagram text-2xl text-white"></i>
+                <font-awesome-icon :icon="['fab', 'instagram']" class="text-2xl text-white" />
               </div>
               <h3 class="text-xl font-semibold mb-2">Instagram</h3>
             </div>
@@ -105,7 +104,7 @@
             class="bg-white p-4 sm:p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300">
             <div class="flex flex-col items-center">
               <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4">
-                <i class="fab fa-whatsapp text-2xl text-white"></i>
+                <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-2xl text-white" />
               </div>
               <h3 class="text-xl font-semibold mb-2">WhatsApp</h3>
             </div>
@@ -119,7 +118,7 @@
             class="bg-white p-4 sm:p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300">
             <div class="flex flex-col items-center">
               <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4">
-                <i class="fab fa-telegram text-2xl text-white"></i>
+                <font-awesome-icon :icon="['fab', 'telegram']" class="text-2xl text-white" />
               </div>
               <h3 class="text-xl font-semibold mb-2">Telegram</h3>
             </div>
@@ -133,7 +132,7 @@
             class="bg-white p-4 sm:p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300">
             <div class="flex flex-col items-center">
               <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-4">
-                <i class="fab fa-viber text-2xl text-white"></i>
+                <font-awesome-icon :icon="['fab', 'viber']" class="text-2xl text-white" />
               </div>
               <h3 class="text-xl font-semibold mb-2">Viber</h3>
             </div>
