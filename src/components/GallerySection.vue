@@ -11,7 +11,6 @@
                     комфорта и безопасности.</p>
             </div>
 
-            <!-- Галерея изображений -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div v-for="(image, index) in galleryImages" :key="index"
                     class="gallery-item group overflow-hidden rounded-xl shadow-lg relative">
@@ -24,7 +23,6 @@
                 </div>
             </div>
 
-            <!-- Кнопка заказа такси -->
             <div class="mt-12 text-center">
                 <a :href="'tel:' + phoneNumber"
                     class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
@@ -37,7 +35,7 @@
 
 <script setup>
 const phoneNumber = '+48794531342';
-// Данные для галереи такси
+
 const galleryImages = [
     {
         src: '/img/image2.webp',

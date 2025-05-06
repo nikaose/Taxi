@@ -1,13 +1,9 @@
 <template>
   <section class="hero bg-[url('/img/background.webp')] bg-cover bg-center bg-fixed py-20 relative" id="hero">
-    <!-- Оверлей с градиентом -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50 z-0"></div>
 
-    <!-- Декоративные элементы -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50 z-0"></div>
     <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent z-10"></div>
     <div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-black/50 to-transparent z-10"></div>
-
-    <!-- Анимированные частицы -->
     <div class="absolute inset-0 overflow-hidden z-5">
       <div class="absolute -top-4 left-1/4 w-8 h-8 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
       <div class="absolute top-1/3 right-1/4 w-4 h-4 bg-yellow-400 rounded-full opacity-20 animate-pulse"
@@ -18,22 +14,15 @@
 
     <div class="container mx-auto px-4 relative z-20">
       <div class="hero-content flex flex-col items-center text-center">
-        <!-- Логотип -->
         <div class="mb-8 transform hover:scale-105 transition-transform duration-300">
           <img src="/img/logo.webp" alt="Logo" class="w-32 h-32 object-cover filter drop-shadow-lg rounded-full">
         </div>
-
-        <!-- Title -->
         <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight drop-shadow-lg">
           {{ title }} <span class="text-yellow-400">24/7</span>
         </h1>
-
-        <!-- Description -->
         <p class="text-lg md:text-xl text-white mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md font-light">
           {{ description }}
         </p>
-
-        <!-- Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md justify-center">
           <a :href="'tel:' + phoneNumber"
             class="cta-button bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-4 px-8 rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl group">
@@ -142,7 +131,7 @@
 
       </div>
 
-      <!-- Добавлена информация о местоположении
+      <!-- Информация о местоположении
       <div class="mt-16 bg-white p-6 rounded-xl shadow-lg">
         <div class="flex flex-col md:flex-row items-center">
           <div class="w-full md:w-1/2 p-4">

@@ -34,7 +34,6 @@ const getBorderClass = () => {
         'blue': 'border-blue-400',
         'green': 'border-green-400',
         'yellow': 'border-yellow-400',
-        // добавьте другие цвета по необходимости
     };
     return colorMap[props.color] || 'border-yellow-400';
 };
@@ -44,7 +43,6 @@ const getIconClass = () => {
         'blue': 'bg-blue-100 text-blue-500',
         'green': 'bg-green-100 text-green-500',
         'yellow': 'bg-yellow-100 text-yellow-500',
-        // добавьте другие цвета по необходимости
     };
     return colorMap[props.color] || 'bg-yellow-100 text-yellow-500';
 };
